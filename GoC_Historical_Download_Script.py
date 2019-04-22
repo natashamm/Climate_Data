@@ -16,7 +16,7 @@ def getHourlyData(stationID, year, month):
 
 stationID = 50093
 start_date = datetime.strptime('Mar2012', '%b%Y')
-end_date = datetime.strptime('Apr2012', '%b%Y')
+end_date = datetime.strptime('Apr2019', '%b%Y')
 
 frames = []
 for dt in rrule.rrule(rrule.MONTHLY, dtstart=start_date, until=end_date):

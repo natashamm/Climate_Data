@@ -42,4 +42,12 @@ for year in np.arange(min_year,max_year+1):
     yearly_dict[year] = df[df['Year']==year]
     
 
+    # Wind Profiles
+
+    copy_df = df[df['Year']==year]
+    
+    pfr = pandas_profiling.ProfileReport(copy_df[['Data/Time','Wind Dir (10s deg)','Wind Dir Flag','Wind Spd (km/h)','Wind Spd Flag']])
+
+    pfr.to_file("{}_wind_data_profile_{}.html".format(input_file,year))
+
 

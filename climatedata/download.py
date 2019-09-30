@@ -2,15 +2,8 @@ import pandas as pd
 import datetime
 from dateutil import rrule
 from datetime import datetime, timedelta
+import getDistance
 
-
-# Call Environment Canada API
-# Returns a dataframe of data
-def getHourlyData(stationID, year, month):
-    base_url = "http://climate.weather.gc.ca/climate_data/bulk_data_e.html?"
-    query_url = "format=csv&stationID={}&Year={}&Month={}&timeframe=1".format(stationID, year, month)
-    api_endpoint = base_url + query_url
-    return pd.read_csv(api_endpoint)
 
 #stationID = 50093
 stationID = input("Station ID: ")

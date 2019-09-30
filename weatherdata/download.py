@@ -2,7 +2,7 @@ import pandas as pd
 import datetime
 from dateutil import rrule
 from datetime import datetime, timedelta
-import getDistance
+import climatedata.helpers.get_distance
 
 
 #stationID = 50093

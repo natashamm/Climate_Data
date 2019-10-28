@@ -5,6 +5,6 @@ Extract Historical Data from the Government of Canada Website using the API
 More information about the API [here](https://drive.google.com/open?id=1bW9-zJWlgtdAHi1sMhpzUuZSlO9VpaDp)  
 
 
-Run in terminal using:  
+Run using:  
 
-`python - m weatherdata`
+`python -m weatherdata`
